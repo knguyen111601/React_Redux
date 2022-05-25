@@ -1,29 +1,30 @@
-import './App.css';
+import {useSelector, useDispatch} from "react-redux" // extract the counter from the store
+
 
 function App() {
+  const counter = useSelector((state) => state.counter)
+  const dispatch = useDispatch()
+
+  const increment = () => {
+    dispatch({type: "INCREMENT"})
+  }
+
+  const decrement = () => {
+    dispatch({type:"DECREMENT"})
+  }
+
+  const addBy = () => {
+    dispatch({type:"ADDBY", payload: 10}) // sending data through payload
+  }
+
   return (
-    <>
-      <div>
-        <h1>Redux</h1>
-        <h3>A complex state management tool with a single store as CDS</h3>
-      </div>
-
-      <div>
-        <h1>Reducers</h1>
-        <h3>Manages the State and Returns the newly updated state</h3>
-      </div>
-
-      <div>
-        <h1>Actions</h1>
-        <h3>Actions have 2 property types: a unique identifier and a payload which has data</h3>
-      </div>
-
-      <div>
-        <h1>Dispatch</h1>
-        <h3>Dispatch is used to send actions to update the data</h3>
-      </div>
-
-    </>
+    <div>
+      <h1>Counter App</h1>
+      <h2>{counter}</h2>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={addBy}>Add by 10</button>
+    </div>
   );
 }
 
