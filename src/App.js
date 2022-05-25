@@ -39,6 +39,34 @@ function App() {
         </div>
       </div>
 
+      <div>
+        <h1 style={{textAlign:"center", marginTop: "100px"}}>Notes</h1>
+        <div style={{display: "flex", flexDirection:"column", width:"60%", margin:"auto"}}>
+          
+          <div style={{display:"flex", justifyContent:"space-around", borderBottom:"2px solid lightgray"}}>
+            <h2 style={{width: "50%", textAlign:"center"}}>Redux</h2>
+            <h2 style={{width: "50%", textAlign:"center"}}>A Complex State Management Tool, with a single store as CDS</h2>
+          </div>
+
+          <div style={{display:"flex", justifyContent:"space-around", borderBottom:"2px solid lightgray"}}>
+            <h2 style={{width: "50%", textAlign:"center"}}>Reducers</h2>
+            <h2 style={{width: "50%", textAlign:"center"}}>Manages the State and Returns the newly updated state</h2>
+          </div>
+
+          <div style={{display:"flex", justifyContent:"space-around", borderBottom:"2px solid lightgray"}}>
+            <h2 style={{width: "50%", textAlign:"center"}}>Actions</h2>
+            <h2 style={{width: "50%", textAlign:"center"}}>Actions has 2 property types: which is a unique identifier and payload which has data</h2>
+          </div>
+
+          <div style={{display:"flex", justifyContent:"space-around", borderBottom:"2px solid lightgray"}}>
+            <h2 style={{width: "50%", textAlign:"center"}}>Dispatch</h2>
+            <h2 style={{width: "50%", textAlign:"center"}}>Dispatch is used to send actions to update the data</h2>
+          </div>
+
+
+        </div>
+      </div>
+
 
     </div>
   );
