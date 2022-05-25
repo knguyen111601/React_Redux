@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>Redux</h1>
+        <h3>A complex state management tool with a single store as CDS</h3>
+      </div>
+
+      <div>
+        <h1>Reducers</h1>
+        <h3>Manages the State and Returns the newly updated state</h3>
+      </div>
+
+      <div>
+        <h1>Actions</h1>
+        <h3>Actions have 2 property types: a unique identifier and a payload which has data</h3>
+      </div>
+
+      <div>
+        <h1>Dispatch</h1>
+        <h3>Dispatch is used to send actions to update the data</h3>
+      </div>
+
+    </>
   );
 }
 
